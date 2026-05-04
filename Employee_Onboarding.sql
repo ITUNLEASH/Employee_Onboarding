@@ -1,8 +1,11 @@
-CREATE DATABASE Company_Employees;
 -- Create the New Database where the new tables will be inserted.
+CREATE DATABASE Company_Employees;
 
+
+-- Specify the name of the Database that will be used from the list of Databases on the Schemas list.
+-- Notice: This source code was written in MySQL Workbench. 
 USE Company_Employees;
--- Specify the name of the Database that will be used from the list of Databased on the Schemas list
+
 
 -- Table Employees: Stores the employee being onboarded.
 -- Create the new table Employees. 
@@ -19,6 +22,7 @@ CREATE TABLE Employees
     Manager_ID INT,
     status ENUM('Pending','Active','On Hold','Terminated') DEFAULT 'Pending'
 );
+
 
 -- Table Departments: This is optional, however it is a best practice.
 -- Create the new table Departments. 
